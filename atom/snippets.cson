@@ -1,0 +1,174 @@
+    # Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log'
+#
+# Each scope (e.g. '.source.coffee' above) can only be declared once.
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+
+# cpp configure:
+'.cpp':
+  'Main with imports':
+    'prefix': 'main-import'
+    'body': """
+            #include <iostream>
+            #include <fstream>
+            #include <string>
+            using namespace std;
+
+            int main()
+            {
+              $1
+              return 0;
+            }
+            """
+            
+  'Note Comment':
+    'prefix': 'note'
+    'body': """
+            // NOTE: 
+            """
+
+# java configure:
+'.java':
+  'for i loop':
+    'prefix': 'fori'
+    'body': """
+            for (int i = 0; i < $1; i++) {
+                
+            }
+            """
+  'for i loop reverse':
+    'prefix': 'forir'
+    'body': """
+            for (int i = $1; i <= 0; i--) {
+                
+            }
+            """
+            
+  'System Out Println':
+    'prefix': 'sop'
+    'body': """
+            System.out.println($1);
+            """
+            
+  'Flowable create':
+    'prefix': 'flc'
+    'body': """
+            Flowable<$1> f = Flowable.create( e -> {$2}, BackpressureStrategy.BUFFER);
+            """
+            
+  'Flowable subscribe':
+    'prefix': 'fsb'
+    'body': """
+            subscribe(val -> {
+                 
+            }, throwable -> {
+                
+            }, () -> {
+                
+            });
+            """
+            
+  'For i and j':
+    'prefix': 'forij'
+    'body': """
+            for (int i = 0; i < arr.length; i++) {
+                int[] col = arr[i];
+                for (int j = 0; j < col.length; j++) {
+                    int row = col[j];
+                    
+                }
+            }
+            """
+            
+  'HashMap Iterate only keys':
+    'prefix': 'hashk'
+    'body': """
+            for ($2 key : $1.keySet()) {
+                
+            }
+            """
+            
+  'HashMap Iterate only both key and values':
+    'prefix': 'hashi'
+    'body': """
+            for (Map.Entry<$2, $3> entry : $1.entrySet()) {
+                $2 key = entry.getKey();
+                $3 value = entry.getValue();
+                // ...
+            }
+            """
+            
+  'Binary Search (Sorted list)':
+    'prefix': 'bin-search'
+    'body': """
+            static int binarySearch(int low, int high, int search, int array[]) {
+                    while (low <= high) {
+                        int mid = (low+high) /2;
+                        
+                        if (array[mid] == search) {
+                            return mid;
+                        }
+                        else if (array[mid] < search) {
+                            low = mid + 1;
+                        }
+                        else {
+                            high = mid - 1;
+                        }
+                    }
+                    return -1;
+                }
+            """
+            
+    
+        
+            
+
+'.kotlin':
+  # 'Create log tag':
+  #   'prefix': 'logt'
+  #   'body': """
+  #           TODO
+  #           """
+            
+  'Log Debug':
+    'prefix': 'logd'
+    'body': 'Log.d(TAG, "$1")'
+    
+  'for i loop':
+    'prefix': 'fori'
+    'body': """
+            for (i in 0..$1) {
+                
+            }
+            """
+  'for i loop reverse':
+    'prefix': 'forir'
+    'body': """
+            for (i in $1 downto 0) {
+                
+            }
+            """
+  'Dump this function':
+    'prefix': 'dumpfun'
+    'body': """
+            println("_______$1_______")
+            println("_______$1.exit_______")
+            """
+    
+            

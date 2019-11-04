@@ -1,0 +1,87 @@
+"*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "b623072f-ee16-4545-b64c-fdc78402245f"
+  "atom-ide-ui":
+    "atom-ide-debugger":
+      showDebuggerOnBpSet: false
+    use:
+      "atom-ide-busy-signal": "default"
+      "atom-ide-code-actions": "default"
+      "atom-ide-code-format": "default"
+      "atom-ide-code-highlight": "default"
+      "atom-ide-console": "default"
+      "atom-ide-datatip": "default"
+      "atom-ide-debugger": "default"
+      "atom-ide-definitions": "default"
+      "atom-ide-diagnostics": "default"
+      "atom-ide-diagnostics-ui": "default"
+      "atom-ide-find-references": "default"
+      "atom-ide-global": "default"
+      "atom-ide-outline-view": "default"
+      "atom-ide-signature-help": "default"
+      "atom-ide-terminal": "default"
+      hyperclick: "default"
+  "atom-material-ui":
+    colors:
+      genAccent: true
+    tabs:
+      stretchedTabs: true
+    ui:
+      panelContrast: true
+  "atom-package-deps":
+    ignored: [
+      "java-classpath-registry"
+    ]
+  "autocomplete-python":
+    useKite: false
+  core:
+    disabledPackages: [
+      "autosave-onchange"
+    ]
+    packagesWithKeymapsDisabled: [
+      "atom-jump-block"
+      "word-jumper"
+    ]
+    telemetryConsent: "limited"
+    themes: [
+      "one-dark-ui"
+      "monokai-seti"
+    ]
+  editor:
+    fontFamily: "Monaco"
+    fontSize: 18
+    scrollPastEnd: true
+    showIndentGuide: true
+  "exception-reporting":
+    userId: "69abe721-5476-4532-b215-ce916481b29f"
+  "git-plus":
+    diffs: {}
+  "gpp-compiler":
+    cCompiler: "g++"
+  "ide-cpp":
+    clangdPath: "/usr/local/opt/llvm/bin"
+  "ide-java":
+    errors:
+      incompleteClasspathSeverity: "ignore"
+  "ide-python":
+    pylsPlugins:
+      pycodestyle:
+        enabled: false
+        ignoreErrorCodes: [
+          "E501"
+        ]
+  "linter-ui-default": {}
+  minimap: {}
+  "one-light-ui": {}
+  "prettier-atom":
+    formatOnSaveOptions:
+      enabled: true
+    useEslint: true
+  "seti-ui": {}
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
+    keepMarkdownLineBreakWhitespace: false
+    removeTrailingWhitespace: false

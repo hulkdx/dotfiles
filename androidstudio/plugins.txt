@@ -1,0 +1,3 @@
+GoToTabs
+https://plugins.jetbrains.com/plugin/7784-gototabs/
+
