@@ -31,23 +31,13 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "cmd+down",
+        "key": "cmd+up",
         "command": "block-travel.jumpUp",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "alt+up",
-        "command": "-block-travel.jumpUp",
         "when": "editorTextFocus"
     },
     {
         "key": "cmd+down",
         "command": "block-travel.jumpDown",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "alt+down",
-        "command": "-block-travel.jumpDown",
         "when": "editorTextFocus"
     },
     {
