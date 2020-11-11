@@ -1,4 +1,3 @@
-// Place your key bindings in this file to override the defaultsauto[]
 [
     {
         "key": "alt+up",
@@ -36,8 +35,18 @@
         "when": "editorTextFocus"
     },
     {
+        "key": "alt+up",
+        "command": "-block-travel.jumpUp",
+        "when": "editorTextFocus"
+    },
+    {
         "key": "cmd+down",
         "command": "block-travel.jumpDown",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+down",
+        "command": "-block-travel.jumpDown",
         "when": "editorTextFocus"
     },
     {
@@ -47,5 +56,25 @@
     {
         "key": "ctrl+alt+n",
         "command": "-code-runner.run"
+    },
+    {
+        "key": "shift+cmd+-",
+        "command": "editor.foldAll",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "cmd+k cmd+0",
+        "command": "-editor.foldAll",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "shift+cmd+=",
+        "command": "editor.unfoldAll",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "cmd+k cmd+j",
+        "command": "-editor.unfoldAll",
+        "when": "editorTextFocus && foldingEnabled"
     }
 ]
