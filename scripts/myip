@@ -1,2 +1,7 @@
 #!/bin/sh
+
+#
+# A safe way of getting the ip address.
+#
+
 dig +short myip.opendns.com @resolver1.opendns.com
