@@ -1,0 +1,35 @@
+# https://github.com/gitlabhq/gitlabhq/blob/master/doc/api/merge_requests.md#create-mr
+
+#
+# generate these
+#
+url=""
+private_token=""
+project_id=""
+
+#
+# arguments
+#
+title=$1
+description=$2
+target_branch="master"
+
+#
+# get the current branch name from git
+#
+branch_name=$(git symbolic-ref -q HEAD)
+branch_name=${branch_name##refs/heads/}
+branch_name=${branch_name:-HEAD}
+
+if [ -z "$title" ]; then
+  echo "invalid arguments, title needs to be passed"
+  exit 0
+fi
+
+curl -X POST \
+	"$url/api/v4/projects/$project_id/merge_requests?private_token=$private_token" \
+	--data "source_branch=$branch_name" \
+	--data "target_branch=$target_branch" \
+	--data "title=$title" \
+	--data "description=$description"
+
