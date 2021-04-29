@@ -1,0 +1,21 @@
+DEFAULT_FILE_NAME=video.mp4
+PHONE_DIR=/sdcard/$FILE_NAME
+
+FILE_NAME=$1
+if [ -z "$FILE_NAME" ]
+then
+  FILE_NAME=$DEFAULT_FILE_NAME
+fi
+
+echo $FILE_NAME
+
+adb shell screenrecord $PHONE_DIR
+
+#
+# Avoid file corruption
+# Is there a better way of doing this?
+#
+sleep 1
+
+adb pull $PHONE_DIR
+adb shell rm  $PHONE_DIR
