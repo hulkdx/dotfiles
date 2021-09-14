@@ -5,18 +5,8 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "alt+cmd+up",
-        "command": "-editor.action.insertCursorAbove",
-        "when": "editorTextFocus"
-    },
-    {
         "key": "alt+down",
         "command": "editor.action.insertCursorBelow",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "alt+cmd+down",
-        "command": "-editor.action.insertCursorBelow",
         "when": "editorTextFocus"
     },
     {
@@ -25,46 +15,8 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+shift+k",
-        "command": "-editor.action.deleteLines",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "cmd+up",
-        "command": "block-travel.jumpUp",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "alt+up",
-        "command": "-block-travel.jumpUp",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "cmd+down",
-        "command": "block-travel.jumpDown",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "alt+down",
-        "command": "-block-travel.jumpDown",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "cmd+i",
-        "command": "code-runner.run"
-    },
-    {
-        "key": "ctrl+alt+n",
-        "command": "-code-runner.run"
-    },
-    {
         "key": "shift+cmd+-",
         "command": "editor.foldAll",
-        "when": "editorTextFocus && foldingEnabled"
-    },
-    {
-        "key": "cmd+k cmd+0",
-        "command": "-editor.foldAll",
         "when": "editorTextFocus && foldingEnabled"
     },
     {
@@ -73,8 +25,11 @@
         "when": "editorTextFocus && foldingEnabled"
     },
     {
-        "key": "cmd+k cmd+j",
-        "command": "-editor.unfoldAll",
-        "when": "editorTextFocus && foldingEnabled"
+        "key": "shift+cmd+w",
+        "command": "workbench.action.closeAllGroups"
+    },
+    {
+        "key": "cmd+l",
+        "command": "workbench.action.gotoLine"
     }
 ]
