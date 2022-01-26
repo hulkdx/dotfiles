@@ -39,5 +39,28 @@
     {
         "key": "cmd+shift+up",
         "command": "editor.action.moveLinesUpAction"
+    },
+    {
+        "key": "alt+left",
+        "command": "-org.decrementContext",
+        "when": "editorLangId == 'org'"
+    },
+    {
+        "key": "alt+right",
+        "command": "-org.incrementContext",
+        "when": "editorLangId == 'org'"
+    },
+    {
+        "key": "cmd+shift+1",
+        "command": "org.incrementContext",
+        "when": "editorLangId == 'org'"
+    },
+    {
+        "key": "ctrl+alt+n",
+        "command": "-code-runner.run"
+    },
+    {
+        "key": "shift+cmd+o",
+        "command": "code-runner.run"
     }
 ]
