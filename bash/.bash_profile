@@ -14,3 +14,6 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 vimc() {
   vim $(which $1)
 }
+
+# hide the ‘default interactive shell is now zsh’
+export BASH_SILENCE_DEPRECATION_WARNING=1
