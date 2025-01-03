@@ -1,3 +1,5 @@
 GoToTabs
 https://plugins.jetbrains.com/plugin/7784-gototabs/
 
+kotlin-fill-class
+https://plugins.jetbrains.com/plugin/10942-kotlin-fill-class
