@@ -141,7 +141,7 @@
         "command": "-workbench.files.action.showActiveFileInExplorer"
     },
     {
-        "key": "shift+cmd+l",
+        "key": "shift+alt+l",
         "command": "splitjoin-vscode.toggle",
         "when": "editorFocus"
     }
